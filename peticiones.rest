@@ -1,0 +1,38 @@
+@host = http://localhost:3000/api
+
+###
+GET {{host}}/user/
+###
+GET {{host}}/user/9
+
+
+###
+POST {{host}}/user
+Content-Type: application/json
+
+{
+    "email": "vivioo@gmail.com",
+    "username": "Vivian",
+    "password": "weh6", 
+    "image": "htts://lllll.png"
+}
+
+
+
+###
+GET {{host}}/post
+
+###
+GET {{host}}/post/1
+
+###
+POST {{host}}/post
+Content-Type: application/json
+
+{
+    "title": "Un colibrí en el pelo de Elena",
+    "description": "Un sueño de otoño",
+    "date": "2024-11-11", 
+    "category": "sueño",
+    "users_id": 1
+}
